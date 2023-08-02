@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/marvel-heroes/static/css/main.f6a67af3.css",
-    "main.js": "/marvel-heroes/static/js/main.454cde23.js",
-    "static/media/vision.png": "/marvel-heroes/static/media/vision.067d4ae1936d64a577ce.png",
-    "static/media/mjolnir.png": "/marvel-heroes/static/media/mjolnir.61f31e1809f12183a524.png",
-    "static/media/error.gif": "/marvel-heroes/static/media/error.42292aa12b6bc303ce99.gif",
-    "index.html": "/marvel-heroes/index.html",
-    "main.f6a67af3.css.map": "/marvel-heroes/static/css/main.f6a67af3.css.map",
-    "main.454cde23.js.map": "/marvel-heroes/static/js/main.454cde23.js.map"
+    "main.css": "/static/css/main.935bc748.css",
+    "main.js": "/static/js/main.06f9bdca.js",
+    "static/media/vision.png": "/static/media/vision.067d4ae1936d64a577ce.png",
+    "static/media/mjolnir.png": "/static/media/mjolnir.61f31e1809f12183a524.png",
+    "static/media/Avengers.png": "/static/media/Avengers.4065c8f9c94e3d8b039a.png",
+    "static/media/error.gif": "/static/media/error.42292aa12b6bc303ce99.gif",
+    "static/media/Avengers_logo.png": "/static/media/Avengers_logo.9eaf219344d83362e830.png",
+    "index.html": "/index.html",
+    "main.935bc748.css.map": "/static/css/main.935bc748.css.map",
+    "main.06f9bdca.js.map": "/static/js/main.06f9bdca.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6a67af3.css",
-    "static/js/main.454cde23.js"
+    "static/css/main.935bc748.css",
+    "static/js/main.06f9bdca.js"
   ]
 }

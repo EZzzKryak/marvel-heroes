@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 import useMarvelService from "../../services/MarvelService";
 import setContent from "../../utils/setContent";
@@ -13,6 +14,7 @@ const SingleComicPage = props => {
 
   useEffect(() => {
     updateComic();
+    // eslint-disable-next-line
   }, [comicId]);
 
   const updateComic = () => {
@@ -41,6 +43,10 @@ const View = ({ data }) => {
   const { title, description, pageCount, thumbnail, language, price } = data;
   return (
     <div className="single-comic">
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={`${title} comic page`} />
+      </Helmet>
       <img src={thumbnail} alt={title} className="single-comic__img" />
       <div className="single-comic__info">
         <h2 className="single-comic__name">{title}</h2>

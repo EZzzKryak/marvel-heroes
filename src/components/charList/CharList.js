@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import useMarvelService from "../../services/MarvelService";
 import ErrorMessage from "../errorMessage/ErrorMessage";
 import Spinner from "../spinner/Spinner";
@@ -31,6 +31,7 @@ const CharList = props => {
 
   useEffect(() => {
     onRequest(offset, true);
+    // eslint-disable-next-line
   }, []);
 
   const onRequest = (offset, initial) => {
@@ -99,18 +100,17 @@ const CharList = props => {
       );
     });
     // А эта конструкция вынесена для центровки спиннера/ошибки
-    return (
-      <ul className="char__grid">
-        {/* <TransitionGroup> */}
-        {items}
-        {/* </TransitionGroup> */}
-      </ul>
-    );
+    return <ul className="char__grid">{items}</ul>;
   };
+
+  const elements = useMemo(() => {
+    return setContent(process, () => renderItems(charList), newItemLoading);
+    // eslint-disable-next-line
+  }, [process]);
 
   return (
     <div className="char__list">
-      {setContent(process, () => renderItems(charList), newItemLoading)}
+      {elements}
       <button
         className="button button__main button__long"
         disabled={newItemLoading}

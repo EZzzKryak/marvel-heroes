@@ -17,7 +17,7 @@ const AppHeader = () => {
                 color: isActive ? "#9f0013" : "inherit",
               })}
               end
-              to="/marvel-heroes"
+              to="/"
             >
               Characters
             </NavLink>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useMarvelService from "../../services/MarvelService";
+import useMarvelService from "../../services/useMarvelService";
 import setContent from "../../utils/setContent";
 
 import PropTypes from "prop-types";

@@ -18,9 +18,8 @@ const useHttp = () => {
         }
         const data = await response.json();
         return data;
-      } catch (e) {
+      } catch (err) {
         setProcess("error");
-        throw e;
       }
     },
     []

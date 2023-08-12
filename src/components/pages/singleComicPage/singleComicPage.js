@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
-import useMarvelService from "../../services/MarvelService";
-import setContent from "../../utils/setContent";
-import AppBanner from "../appBanner/AppBanner";
+import useMarvelService from "../../../services/useMarvelService";
+import setContent from "../../../utils/setContent";
+import AppBanner from "../../appBanner/AppBanner";
 
 import "./singleComicPage.scss";
 

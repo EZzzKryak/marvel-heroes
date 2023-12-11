@@ -1,4 +1,5 @@
 # Marvel Heroes
+![alt teg](https://i.postimg.cc/pLgHSvcg/image.png)
 ### Описание проекта :book:
 Это полноценная энциклопедия с героями Marvel и комиксами по вселенной.
 ### Возможности и функционал :computer:
